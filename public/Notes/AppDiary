@@ -1,0 +1,27 @@
+Using SASS - APP for First Run
+https://github.com/dunky11/react-saas-template/tree/master/src
+
+Setting Up DataTables Material UI / Core - DataTables
+Using Material/UI/core Tables -- See documentation:
+https://material-table-core.com/
+
+Modifications to Tables - Selectable - Status
+Created a Custom Selectable Component -- ./shared/components/FilterTable.js
+
+Building Application Tables - Controlling Data CRUD
+Using Material/UI/core Tables -- See documentation: https://material-table-core.com/
+Tutorial: https://blog.logrocket.com/material-table-react-tutorial-with-examples/
+
+API Store
+https://github.com/bradymholt/aspnet-core-react-template/tree/master/client-react/services
+
+Identity 2.0 -- Self Hosting Login
+http://johnatten.com/2014/10/26/asp-net-web-api-and-identity-2-0-customizing-identity-models-and-implementing-role-based-authorization/
+
+MS Azure Graph - Open API Token based permissions.
+
+Toasts - Messages
+https://mui.com/components/snackbars/
+
+Cheat Sheets
+https://overapi.com/nodejs
