@@ -7,7 +7,7 @@ import Footer from "./footer/Footer";
 import "aos/dist/aos.css";
 import CookieRulesDialog from "./cookies/CookieRulesDialog";
 import CookieConsent from "./cookies/CookieConsent";
-import dummyBlogPosts from "../dummy_data/blogPosts";
+import dummyjobPosts from "../dummy_data/jobPost";
 import DialogSelector from "./register_login/DialogSelector";
 import Routing from "./Routing";
 import smoothScrollTop from "../../shared/functions/smoothScrollTop";
@@ -25,7 +25,7 @@ function Main(props) {
   const { classes } = props;
   const [selectedTab, setSelectedTab] = useState(null);
   const [isMobileDrawerOpen, setIsMobileDrawerOpen] = useState(false);
-  const [blogPosts, setBlogPosts] = useState([]);
+  const [jobPosts, setjobPosts] = useState([]);
   const [dialogOpen, setDialogOpen] = useState(null);
   const [isCookieRulesDialogOpen, setIsCookieRulesDialogOpen] = useState(false);
 
@@ -36,10 +36,10 @@ function Main(props) {
     setSelectedTab("Home");
   }, [setSelectedTab]);
 
-  const selectBlog = useCallback(() => {
+  const selectjob = useCallback(() => {
     smoothScrollTop();
-    document.title = "John's React Sample";
-    setSelectedTab("Blog");
+    document.title = "Applicant";
+    setSelectedTab("job");
   }, [setSelectedTab]);
 
   const openLoginDialog = useCallback(() => {
@@ -72,9 +72,9 @@ function Main(props) {
     setDialogOpen("changePassword");
   }, [setDialogOpen]);
 
-  const fetchBlogPosts = useCallback(() => {
-    const blogPosts = dummyBlogPosts.map((blogPost) => {
-      let title = blogPost.title;
+  const fetchjobPosts = useCallback(() => {
+    const jobPosts = dummyjobPosts.map((jobPost) => {
+      let title = jobPost.title;
       title = title.toLowerCase();
       /* Remove unwanted characters, only accept alphanumeric and space */
       title = title.replace(/[^A-Za-z0-9 ]/g, "");
@@ -82,12 +82,12 @@ function Main(props) {
       title = title.replace(/\s{2,}/g, " ");
       /* Replace space with a '-' symbol */
       title = title.replace(/\s/g, "-");
-      blogPost.url = `/blog/post/${title}`;
-      blogPost.params = `?id=${blogPost.id}`;
-      return blogPost;
+      jobPost.url = `/job/post/${title}`;
+      jobPost.params = `?id=${jobPost.id}`;
+      return jobPost;
     });
-    setBlogPosts(blogPosts);
-  }, [setBlogPosts]);
+    setjobPosts(jobPosts);
+  }, [setjobPosts]);
 
   const handleCookieRulesDialogOpen = useCallback(() => {
     setIsCookieRulesDialogOpen(true);
@@ -97,7 +97,7 @@ function Main(props) {
     setIsCookieRulesDialogOpen(false);
   }, [setIsCookieRulesDialogOpen]);
 
-  useEffect(fetchBlogPosts, [fetchBlogPosts]);
+  useEffect(fetchjobPosts, [fetchjobPosts]);
 
   return (
     <div className={classes.wrapper}>
@@ -128,9 +128,9 @@ function Main(props) {
         handleMobileDrawerClose={handleMobileDrawerClose}
       />
       <Routing
-        blogPosts={blogPosts}
+        jobPosts={jobPosts}
         selectHome={selectHome}
-        selectBlog={selectBlog}
+        selectjob={selectjob}
       />
       <Footer />
     </div>
