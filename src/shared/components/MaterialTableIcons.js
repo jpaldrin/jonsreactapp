@@ -1,5 +1,5 @@
 import React, { forwardRef } from "react";
-
+import Refresh from '@material-ui/icons/Refresh';
 import AddBox from "@material-ui/icons/AddBox";
 import ArrowDownward from "@material-ui/icons/ArrowDownward";
 import Check from "@material-ui/icons/Check";
@@ -18,6 +18,7 @@ import ViewColumn from "@material-ui/icons/ViewColumn";
 
 const tableIcons = {
   Add: forwardRef((props, ref) => <AddBox {...props} ref={ref} style={{ color: "forestgreen"}}  />),
+  Refresh: forwardRef((props, ref) => <Refresh {...props} ref={ref} style={{ color: "green"}}  />),
   Check: forwardRef((props, ref) => <Check {...props} ref={ref} style={{ color: "green"}}  />),
   Clear: forwardRef((props, ref) => <Clear {...props} ref={ref} style={{ color: "darkred"}}  />),
   Delete: forwardRef((props, ref) => <DeleteOutline {...props} ref={ref} style={{ color: "crimson"}} />),
