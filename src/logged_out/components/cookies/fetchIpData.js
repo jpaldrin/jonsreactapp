@@ -22,3 +22,7 @@ const fetchIpData = new Promise((resolve, reject) => {
 });
 
 export default fetchIpData;
+
+// Use this to create an account for tracking on external app
+// NLog on API captures all of this so you can use that or use this up to you...
+// https://ipinfo.io/developers#https-ssl

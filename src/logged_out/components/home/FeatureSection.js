@@ -18,81 +18,28 @@ const iconSize = 30;
 const features = [
   {
     color: "#00C853",
-    headline: "Job Role",
+    headline: "React",
     text:
-      "Maintenance roles are available",
+      "React Tutorial using hooks. Full Stack dotnetcore web api contoso university.",
     icon: <BuildIcon style={{ fontSize: iconSize }} />,
     mdDelay: "0",
     smDelay: "0"
   },
   {
     color: "#6200EA",
-    headline: "job Role",
+    headline: "MVC",
     text:
-      "Planning and Business Roles are available",
+      "Build a complete MVC dotnetcore6 Entity Framework App",
     icon: <CalendarTodayIcon style={{ fontSize: iconSize }} />,
     mdDelay: "200",
     smDelay: "200"
   },
   {
     color: "#0091EA",
-    headline: "Job Role",
+    headline: "Razor Pages",
     text:
-      "Apply for a job in customer service",
+      "Learn complex razor Drop Down List and using child relationships in MVC - Advanced",
     icon: <MeassageIcon style={{ fontSize: iconSize }} />,
-    mdDelay: "400",
-    smDelay: "0"
-  },
-  {
-    color: "#d50000",
-    headline: "Job role",
-    text:
-      "Apply for a job in IT",
-    icon: <ComputerIcon style={{ fontSize: iconSize }} />,
-    mdDelay: "0",
-    smDelay: "200"
-  },
-  {
-    color: "#DD2C00",
-    headline: "Job Role",
-    text:
-      "Apply for a role in Finance.",
-    icon: <BarChartIcon style={{ fontSize: iconSize }} />,
-    mdDelay: "200",
-    smDelay: "0"
-  },
-  {
-    color: "#64DD17",
-    headline: "job Role",
-    text:
-      "Fulltime fremote positions working in customer service",
-    icon: <HeadsetMicIcon style={{ fontSize: iconSize }} />,
-    mdDelay: "400",
-    smDelay: "200"
-  },
-  {
-    color: "#304FFE",
-    headline: "Job Role",
-    text:
-      "Maintain our cloud platform...",
-    icon: <CloudIcon style={{ fontSize: iconSize }} />,
-    mdDelay: "0",
-    smDelay: "0"
-  },
-  {
-    color: "#C51162",
-    headline: "Job Role",
-    text:
-      "Apply and let us decide where you might be able to help.",
-    icon: <CodeIcon style={{ fontSize: iconSize }} />,
-    mdDelay: "200",
-    smDelay: "200"
-  },
-  {
-    color: "#00B8D4",
-    headline: "Job Role - Admin",
-    text: "Create Edit Update Job Roles when logged in as an Admin",
-    icon: <CancelIcon style={{ fontSize: iconSize }} />,
     mdDelay: "400",
     smDelay: "0"
   }
@@ -104,7 +51,7 @@ function FeatureSection(props) {
     <div style={{ backgroundColor: "#FFFFFF" }}>
       <div className="container-fluid lg-p-top">
         <Typography variant="h3" align="center" className="lg-mg-bottom">
-          Human Resource Manager
+          Video Tutorials
         </Typography>
         <div className="container-fluid">
           <Grid container spacing={calculateSpacing(width)}>

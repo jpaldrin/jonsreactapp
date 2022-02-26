@@ -84,20 +84,20 @@ function NavBar(props) {
         <Toolbar className={classes.toolbar}>
 
           <div >
-          <img src={`${process.env.PUBLIC_URL}/images/logged_out/illogo.jpg`} style={{ position: "absolute", top:"10px", left:"10px", width:"40px", height:"40px", overFlow:"hidden", backgroundColor: "#fff" }} alt="logo" />
+          <img src={`${process.env.PUBLIC_URL}/images/logged_out/dddd.png`} style={{ position: "absolute", top:"10px", left:"10px", width:"40px", height:"40px", overFlow:"hidden", backgroundColor: "#fff" }} alt="logo" />
             <Typography style={{color: red[400] }}
               variant="h3"
               className={classes.brandText}
               display="inline"
             >
-              <span style={{marginLeft: "35px"}}></span> imagine
+              <span style={{marginLeft: "35px"}}></span> john
             </Typography>
             <Typography style={{ color: blue[400] }}
               variant="h3"
               className={classes.brandText}
               display="inline"
             >
-              Learning <span style={{ color: grey[400] }}><small><sup>Internal HR</sup></small></span>
+              aldrin <span style={{ color: grey[400] }}><small><sup>.com</sup></small></span>
             </Typography>
           
           </div>

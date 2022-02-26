@@ -36,7 +36,7 @@ const styles = theme => ({
     }
   });
 
-const API_HOST = "https://localhost:7039/api";
+const API_HOST = "https://localhost:7097/api";
 const EMPLOYEE_API_URL = `${API_HOST}/Employee/`;
 
 function Employee(props) {
@@ -85,13 +85,13 @@ function Employee(props) {
                     <div style={{ paddingLeft: 15, fontSize: 14, height: "auto" }}>
                         <div style={{textAlign: "left"}}>
                         <h3 style={{  color: "#808080"}}> { rowData.firstName + ' ' + rowData.lastName } </h3>
-                        <h5 style={{  color: "#808080"}}>Employee ID: { rowData.id } </h5>
+                        <h5 style={{  color: "#808080"}}>Employee ID: { rowData.employeeId } </h5>
                         </div>
                         {
                     data.map((oldData) => (
                      <ul key={oldData.id} style={{ listStyle: "none"}}>
                         {
-                            rowData.id === oldData.id ? ( 
+                            rowData.employeeId === oldData.employeeId ? ( 
                          <li>
                     <Box sx={{ minWidth: 120 }}>
                         <FormControl variant="standard" sx={{ m: 1, minWidth: 280 }}>
@@ -102,7 +102,7 @@ function Employee(props) {
                         </FormControl>
                     </Box>
                          </li> 
-                            ):(oldData.id === rowData.id)  
+                            ):(oldData.employeeId === rowData.employeeId)  
                         }
                          </ul>
                    ))
@@ -150,7 +150,7 @@ function Employee(props) {
                                     hireDate: newData.hireDate,
                                     salary: newData.salary, 
                                     status: newData.status,  
-                                    jobId: newData.jobId = "10"                 
+                                    jobId: newData.jobId = "1"                 
                                 }) {
                                     const response = await fetch(url, {
                                         method: 'POST',

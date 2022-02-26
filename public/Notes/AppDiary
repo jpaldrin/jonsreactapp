@@ -1,5 +1,33 @@
 Using SASS - APP for First Run
 https://github.com/dunky11/react-saas-template/tree/master/src
+//Login
+https://github.com/cornflourblue/react-role-based-authorization-example -asp
+https://jasonwatmore.com/post/2019/02/01/react-role-based-authorization-tutorial-with-example -react
+https://stackblitz.com/edit/react-role-based-authorization-example
+
+PWA Implementation
+https://create-react-app.dev/docs/making-a-progressive-web-app/
+
+Production BUILD
+Profiling
+ReactDOM automatically supports profiling in development mode for v16.5+, but since profiling adds some small additional overhead it is opt-in for production mode. You can opt-in by using the --profile flag. Use npm run build -- --profile or yarn build --profile to enable profiling in the production build. See the React docs for details about profiling using the React DevTools.
+
+Real World Application Tutorial on Youtuber Development
+https://www.youtube.com/watch?v=nySib7ipZdk
+
+DevOps
+Paralell Jobs Requests 
+https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR63mUWPlq7NEsFZhkyH8jChUMlM3QzdDMFZOMkVBWU5BWFM3SDI2QlRBSC4u
+
+org name: jpaldrinwebapp
+
+Using Pipes
+https://docs.microsoft.com/en-us/azure/devops/pipelines/create-first-pipeline?view=azure-devops&viewFallbackFrom=vsts&tabs=java%2Ctfs-2018-2%2Cbrowser
+
+Pipes:
+https://azure.microsoft.com/en-us/pricing/details/devops/azure-devops-services/
+
+
 
 Setting Up DataTables Material UI / Core - DataTables
 Using Material/UI/core Tables -- See documentation:
@@ -25,3 +53,9 @@ https://mui.com/components/snackbars/
 
 Cheat Sheets
 https://overapi.com/nodejs
+
+
+EnlighterJS, an open source syntax highlighter written in pure javascript
+
+enlighterjs
+https://github.com/simonzeeks/react-enlighten#readme

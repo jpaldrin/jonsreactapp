@@ -29,7 +29,7 @@ export default class PlayerExample extends Component {
       <div>
         <Player
         playsInline
-        poster = {`${process.env.PUBLIC_URL}/images/logged_out/headerimage.png`}
+        poster = {`${process.env.PUBLIC_URL}/images/logged_out/dotnettootlogo.png`}
           ref={player => {
             this.player = player;
           }}

@@ -123,8 +123,7 @@ function HeadSection(props) {
                           variant="h4"
                           className={classes.brandText}
                           display="inline" >
-                            <span style={{fontSize:"1.5em", color:grey[200]}}>Our team</span> creates the curriculum and assessments to transform the way teachers teach and 
-                            students learn. <br/><br/><span style={{fontSize:"1.5em", color: grey[200]}}>Imagine</span> what we can do... When we work together?
+                            <span style={{fontSize:"1.5em", color:grey[200]}}>.dotnetcore 6</span> MVC RAZOR tutorials and some other intersting code to support various features to save your company time and money. <br/><br/><span style={{fontSize:"1.5em", color: grey[200]}}>SQL</span> Entity Framework Core Implementation Repository Pattern using Unit of Work.
                           </Typography>
                         </Box>
                         <Button
@@ -146,7 +145,7 @@ function HeadSection(props) {
                       variant="h3"
                       className={classes.brandText}
                       display="inline">
-                      ...how we move <br/>
+                      over view... <br/>
                       </Typography>
                       <VideoPlayer />
                     </Grid>
